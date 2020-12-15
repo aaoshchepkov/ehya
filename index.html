@@ -1,59 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ehya</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Ehya</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="navbar">
-      <a href="#" class="logo"><img src="img/Logo.svg" alt="Logo: Ehya" class="logo__img" /></a>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Главная</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Новинки</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Тренды</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Отзывы</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">Контакты</a>
-        </li>
-      </ul>
-      <a href="#" class="navbar__button">Войти</a>
-      <!-- /.navbar -->
-  </header>
-  <section class="hero">
-    <div class="container">
-      <div class="hero__wrapper">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <a href="#" class="logo"
+            ><img src="img/Logo.svg" alt="Logo: Ehya" class="logo__img"
+          /></a>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Главная</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Новинки</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Тренды</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Отзывы</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Контакты</a>
+            </li>
+          </ul>
+          <a href="#" class="navbar__button">Войти</a>
+        </div>
+        <!-- /.navbar -->
+      </div>
+    </header>
+    <section class="hero hero__wrapper">
         <a href="#" class="hero__badges"># READY TO BE COOL</a>
-        <h1 class="hero__title">Каждый может <br> быть крутым <br> и модным</h1>
-        <p class="hero__info">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас.</p>
+        <h1 lang="en" class="title hero__title">
+          Каждый может <br />
+          быть крутым <br />
+          и модным
+        </h1>
+        <p class="hero__info">
+          Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и
+          обновлять свой стиль. Всё это вы можете найти здесь. Начните сейчас.
+        </p>
         <a href="#" class="hero__button">Подобрать одежду</a>
         <div class="hero__advantage">
-          <ul class="hero__list">
-            <li class="hero__item"><img src="img/hand.svg" alt="Icon: Hand" class="hero__icon"><span class="hero__text">Онлайн оплата</span></li>
-            <li class="hero__item"><img src="img/shild.svg" alt="Icon: Shild" class="hero__icon"><span class="hero__text">Гарантия</span></li>
-            <li class="hero__item"><img src="img/Like.svg" alt="Icon: Like" class="hero__icon"><span class="hero__text">Качество</span></li>
+          <ul lang="en" class="hero__list">
+            <li class="hero__item">
+              <img
+                src="img/hand.svg"
+                alt="Icon: Hand"
+                class="hero__icon"
+              /><span class="hero__text">Онлайн оплата</span>
+            </li>
+            <li class="hero__item">
+              <img
+                src="img/shild.svg"
+                alt="Icon: Shild"
+                class="hero__icon"
+              /><span class="hero__text">Гарантия</span>
+            </li>
+            <li class="hero__item">
+              <img
+                src="img/Like.svg"
+                alt="Icon: Like"
+                class="hero__icon"
+              /><span class="hero__text">Качество</span>
+            </li>
           </ul>
+    </section>
+    <!-- /.hero -->
+    <section class="collection">
+      <div class="container">
+      <div class="collection__wrapper">
+        <div class="collection__block"><img src="img/collection1.png" alt="Photo" class="collection__img"></div>
+        
+        <div class="collection__block">
+          <div class="collection__block-img"><img src="img/collection2.png" alt="Photo" class="collection__img"></div>
+          <!-- /.collection__block-img -->
+          <div class="collection__block-img"><img src="img/collection3.png" alt="Photo" class="collection__img"></div>
+          <!-- /.collection__block-img -->
+          
+        </div>
+        <div class="collection__info">
+          <h2 lang="en" class="collection__title">Новая зимняя коллекция</h2>
+          <p class="collection__text">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</p>
+          <a href="#" class="collection__button">Посмотреть коллекцию <img src="img/arrow-right.svg" alt="Icon: arrow" class="collection__icon"></a>
         </div>
       </div>
-      <!-- /.hero-wrapper -->
-    </div>
-    <!-- /.container -->
-  </section>
-  <!-- /.select -->
-</body>
-
+      </div>
+    </section>
+     <!-- /.collection -->
+  </body>
 </html>
