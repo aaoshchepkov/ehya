@@ -21,7 +21,11 @@
   .trends
     &__cards
       justify-content: space-around
-
+  .history
+    &__block
+      width: 360px
+    &__card
+      width: 300px
 @media ( max-width:992px  )
   .container
     max-width: 672px
@@ -85,7 +89,7 @@
       height: 100%
 
     &__text
-      margin: 0 0 24px 0
+      margin: 0 0 22px 0
 
   .trends
     padding: 0
@@ -105,7 +109,7 @@
       padding: 0 32px
     &__card
       width: 280px
-      margin-bottom: 46px
+      margin-bottom: 44px
     &__img
       width: 280px
       height: 350px
@@ -116,6 +120,9 @@
       padding: 0 20px
     &__slider
       max-width: 100%
+    &__slide
+
+      margin-bottom: 45px
     &__img
       margin-bottom: 30px
     &__text
@@ -123,6 +130,83 @@
       padding: 0 10px
       max-height: 210px
       overflow-y: scroll
+  .history
+    &__wrapper
+      padding: 75px 0 60px 0
+      flex-direction: column
+      align-items: center
+    &__block
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0
+      margin-bottom: 35px
+    &__title
+      margin: 25px 0 15px 0
+      text-align: center
+    &__text
+      max-width: 568px
+      text-align: center
+      margin-bottom: 35px
+    &__buttons
+      margin-left: 14px
+    &__button
+      margin-right: 18px
+    &__slider
+      width: 680px
+    &__card
+      width: 332px
+@media (max-width: 710px)
+  .history
+    &__wrapper
+      padding: 50px 0 60px 0
+    &__badges
+      padding: 2px 12px
+    &__block
+      width: 95%
+      margin: 0
+      margin-bottom: 22px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      &-hidden
+        display: none
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__buttons
+      margin: 0 auto
+    &__button
+      margin: 0 7px
+      &-img
+        width: 48px
+        height: 48px
+
+    &__slider
+      width: 94%
+      height: 100%
+    &__cards
+      flex-direction: column
+      height: 100%
+    &__card
+      width: 100%
+      height: 430px
+    &__img
+      width: 97%
+      height: 277px
+
+    &__info
+      top: 257px
+      padding: 20px 32px 20px 18px
+      background-color: #FAFDFF
+      width: 100%
+      &-title
+        max-width: 280px
+        margin: 0 0 17px 0
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
 
 @media (max-width: 767px)
   .container
@@ -205,7 +289,7 @@
   .trends
     padding: 0
     &__wrapper
-      margin-bottom: 30px
+      margin-bottom: 28px
     &__nav
       flex-direction: column
       justify-content: center
@@ -226,7 +310,7 @@
       padding: 0
     &__card
       flex-basis: 48%
-      margin-bottom: 19px
+      margin-bottom: 17px
       justify-content: start
       &:last-child
         padding: 40px 0 23px 0
@@ -258,10 +342,13 @@
   .reviews
     &__wrapper
       padding: 0
+      margin-bottom: 50px
     &__img
       margin-bottom: 12px
       width: 70px
       height: 81px
+    &__slide
+      margin-bottom: 40px
     &__text
       margin: 0 0 25px 0
       overflow-y: scroll

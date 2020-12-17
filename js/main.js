@@ -23,8 +23,9 @@ $(document).ready(function () {
     el: '.swiper-pagination',
     type: 'bullets',
     bulletElement:'span',
+    clickable: true,
   }, 
-})
+  })
   $(".reviews").on("mouseover", function( ) {
     reviewsSwiper. autoplay. stop();
   });
@@ -32,6 +33,14 @@ $(document).ready(function () {
     reviewsSwiper. autoplay. start();
   });
 
- 
+  var historySwiper = new Swiper('.history__slider', {
+  // Optional parameter
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.history__button-left',
+    prevEl: '.history__button-right',
+  },
+})
 
 });

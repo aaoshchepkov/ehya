@@ -1,11 +1,14 @@
 .history
   &__wrapper
-    padding-top: 131px
+    padding: 131px 0 140px 0
     display: flex
     justify-content: space-between
     border-top: 1px solid #E5EAF4
   &__block
-    width: 392px
+    width: 400px
+    margin-top: -4px
+    margin-left: -4px
+    margin-right: 4px
   &__badges
     padding: 6px 16px
     text-decoration: none
@@ -21,10 +24,10 @@
     font-size: 48px
     line-height: 60px
     letter-spacing: 0.2px
-    margin: 28px 0 24px 0
+    margin: 33px 0 25px 0
   &__text
     font-size: 20px
-    line-height: 36px
+    line-height: 37px
     color: $text-color
     margin: 0 0 48px 0
   &__buttons
@@ -32,30 +35,39 @@
     border: none
     background-color: $light
     cursor: pointer
+    padding: 0
+    margin-right: 16px
+    outline: none
+  &__slider
+    width: 660px
+    min-height: 475px
+    margin: 0 -4px 0 0
+
   &__cards
     display: flex
     justify-content: space-between
-    width: 662px
+
   &__card
     position: relative
     width: 322px
+
   &__img
     border-radius: 8px 8px 0 0
     object-fit: cover
-    width: 312px
+    width: 97%
     height: 317px
   &__info
     position: absolute
     left: 10px
     top: 297px
-    padding: 20px 32px 20px 20px
+    padding: 20px 32px 20px 22px
     background-color: #FAFDFF
     width: 312px
     &-title
-      margin: 0
+      margin: 0 0 20px 0
       font-weight: 500
       font-size: 22px
-      line-height: 32px
+      line-height: 33px
       letter-spacing: 0.2px
     &-button
       text-decoration: none
@@ -63,3 +75,4 @@
       font-size: 16px
       line-height: 22px
       color: $blue
+      padding: 0
