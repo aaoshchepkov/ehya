@@ -51,6 +51,8 @@
       max-width: 95%
       margin: 0 auto 80px auto
       padding: 35px 0 35px 28px
+      background-size: auto
+      background-position: 65% 25%
     &__badges
       margin-bottom: 25px
     &__title
@@ -88,7 +90,7 @@
   .trends
     padding: 0
     &__wrapper
-      margin-bottom: 100px
+      margin-bottom: 30px
     &__nav
       flex-direction: column
       justify-content: center
@@ -109,6 +111,20 @@
       height: 350px
       object-fit: cover
       margin-bottom: 22px
+  .reviews
+    &__wrapper
+      padding: 0 20px
+    &__img
+      margin-bottom: 30px
+    &__text
+      margin: 0 0 28px 0
+      padding: 0 10px
+      max-height: 210px
+      overflow-y: scroll
+
+  .swiper
+    &-container
+      max-width: 100%
 
 @media (max-width: 767px)
   .container
@@ -122,11 +138,13 @@
     &__wrapper
       max-width: 100%
       margin: 0 auto 60px auto
-      background-size: cover
-      background-position: 78% 100%
+      background-image: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/hero-bg.jpg)
+      background-size: fill
+      background-position: 80% 0%
       border-radius: 0
       padding: 381px 20px 20px 20px
       text-align: center
+
     &__badges
       margin-bottom: 22px
       padding: 2px 26px
@@ -158,17 +176,17 @@
 
   .collection
     &__wrap
-      margin-bottom: 110px
+      margin-bottom: 112px
     &__block
       flex-basis: 100%
       height: 100%
       flex-direction: row
       margin-bottom: 15px
       &:first-child
-        height: 300px
+        height: 350px
       &-img
         flex-basis: 48%
-        height: 100px
+        height: 150px
     &__img
       width: 100%
       height: 100%
@@ -189,7 +207,7 @@
   .trends
     padding: 0
     &__wrapper
-      margin-bottom: 100px
+      margin-bottom: 30px
     &__nav
       flex-direction: column
       justify-content: center
@@ -214,11 +232,10 @@
       justify-content: start
       &:last-child
         padding: 40px 0 23px 0
-        height: 170px
+        height: 250px
     &__img
       width: 100%
-      height: 170px
-      object-fit: cover
+      height: 250px
       margin-bottom: 15px
     &__title
       font-size: 16px
@@ -240,14 +257,39 @@
         width: 25px
         height: 32px
         margin-bottom: 15px
-@media (max-width: 656px)
-  .packages
+  .reviews
+    &__wrapper
+      padding: 0
+    &__img
+      margin-bottom: 12px
+      width: 70px
+      height: 81px
+    &__text
+      margin: 0 0 25px 0
+      overflow-y: scroll
+      max-height: 360px
+      font-size: 18px
+      line-height: 36px
+    &__username
+      margin: 0 40px
 
-@media (max-width: 590px)
-  .hotel
+  .swiper
+    &-container
+      max-width: 100%
 
 @media (max-width: 410px)
-  .modal
+  .collection
+    &__block
+      &:first-child
+        height: 300px
+      &-img
+        height: 97px
+  .trends
+    &__card
+      &:last-child
+        height: 170px
+    &__img
+      height: 170px
 
 @media only screen and (max-height: 595px)
   .modal

@@ -9,4 +9,23 @@ $(document).ready(function () {
     $(activeContent).addClass("trends__cards-active");
     $(this).addClass("trends__item-active");
   })
+
+  var mySwiper = new Swiper(".swiper-container", {
+  // Optional parameters
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    bulletElement:'span',
+  },
+  
+  
+})
 });
