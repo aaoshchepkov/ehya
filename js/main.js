@@ -10,7 +10,7 @@ $(document).ready(function () {
     $(this).addClass("trends__item-active");
   })
 
-  var mySwiper = new Swiper(".swiper-container", {
+  var reviewsSwiper = new Swiper(".reviews__slider", {
   // Optional parameters
   autoplay: {
     delay: 7000,
@@ -26,10 +26,10 @@ $(document).ready(function () {
   }, 
 })
   $(".reviews").on("mouseover", function( ) {
-    mySwiper. autoplay. stop();
+    reviewsSwiper. autoplay. stop();
   });
   $(".reviews").on("mouseout", function( ) {
-    mySwiper. autoplay. start();
+    reviewsSwiper. autoplay. start();
   });
 
  
