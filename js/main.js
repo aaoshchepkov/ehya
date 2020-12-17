@@ -16,16 +16,22 @@ $(document).ready(function () {
     delay: 7000,
     disableOnInteraction: false,
   },
-  
   loop: true,
-
+  
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     bulletElement:'span',
-  },
-  
-  
+  }, 
 })
+  $(".reviews").on("mouseover", function( ) {
+    mySwiper. autoplay. stop();
+  });
+  $(".reviews").on("mouseout", function( ) {
+    mySwiper. autoplay. start();
+  });
+
+ 
+
 });
