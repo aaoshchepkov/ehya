@@ -1,7 +1,33 @@
 @media(hover: hover) and (pointer: fine)
   a
     transition: 0.2s
-
+    &:hover
+      color: $blue
+      transform: translateY(-2px)
+  button
+    &:hover
+      transform: translateY(-2px)
+      color: $blue
+  input
+    &:hover
+      background-color: #d4e4f1
+  .history
+    &__button
+      &-left
+        &:hover
+          background-image: url(../img/Button-left-dark.svg)
+      &-right
+        &:hover
+          background-image: url(../img/Button-right-dark.svg)
+    &__info
+      &-button
+        &:hover
+          color: $green
+  .collection
+    &__button
+      &:hover
+        .collection__icon
+          margin-left: 25px
 @media ( max-width:1290px)
   .hero
     &__wrapper
@@ -65,6 +91,7 @@
         background-color: #3A4C66
         border-radius: 50px
     &__menu
+      transition: 0.4s
       padding: 36px 24px
       display: none
       position: fixed
@@ -251,9 +278,8 @@
       margin: 0 auto
     &__button
       margin: 0 7px
-      &-img
-        width: 48px
-        height: 48px
+      width: 48px
+      height: 48px
 
     &__slider
       width: 94%
@@ -540,5 +566,9 @@
 @media only screen and (max-height: 520px)
   .modal
     overflow: auto
+    max-height: 100%
+    flex-shrink: 0
     &__visible
       overflow: auto
+    &__form
+      flex-shrink: 0

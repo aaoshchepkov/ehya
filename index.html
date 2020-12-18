@@ -32,19 +32,19 @@
             </button>
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Главная</a>
+                <a href="#hero" class="navbar__link">Главная</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Новинки</a>
+                <a href="#collection" class="navbar__link">Новинки</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Тренды</a>
+                <a href="#trends" class="navbar__link">Тренды</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Отзывы</a>
+                <a href="#reviews" class="navbar__link">Отзывы</a>
               </li>
               <li class="navbar__item">
-                <a href="#" class="navbar__link">Контакты</a>
+                <a href="#contacts" class="navbar__link">Контакты</a>
               </li>
             </ul>
             <a href="#" class="navbar__button">Войти</a>
@@ -58,7 +58,7 @@
         <!-- /.navbar__wrapper -->
       </div>
     </header>
-    <section class="hero hero__wrapper">
+    <section id="hero" class="hero hero__wrapper">
       <a href="#" class="hero__badges"># READY TO BE COOL</a>
       <h1 lang="en" class="title hero__title">
         Каждый может <br />
@@ -95,7 +95,7 @@
     <!-- /.hero -->
     <section class="collection collection__wrap">
       <div class="container">
-        <div class="collection__wrapper">
+        <div id="collection" class="collection__wrapper">
           <div class="collection__block">
             <img
               src="img/collection1.png"
@@ -142,7 +142,7 @@
       </div>
     </section>
     <!-- /.collection -->
-    <section class="trends trends__wrapper">
+    <section id="trends" class="trends trends__wrapper">
       <div class="container">
         <div class="trends__nav">
           <h2 lang="en" class="trends__nav-title">Тренды</h2>
@@ -309,7 +309,7 @@
     <!-- /.trends -->
     <section class="reviews">
       <div class="container">
-        <div class="reviews__wrapper">
+        <div id="reviews" class="reviews__wrapper">
           <img src="img/quote-left.svg" alt="Icon:quote" class="reviews__img" />
           <div lang="en" class="swiper-container reviews__slider">
             <!-- Additional required wrapper -->
@@ -355,7 +355,7 @@
     <!-- /.reviews -->
     <section class="history">
       <div class="container">
-        <div class="history__wrapper">
+        <div id="history" class="history__wrapper">
           <div class="history__block">
             <a href="#" class="history__badges">Истории</a>
             <h2 lang="en" class="history__title">
@@ -368,20 +368,8 @@
               <span class="white-space">и специалистом.</span>
             </p>
             <div class="history__buttons">
-              <button class="history__button history__button-left">
-                <img
-                  src="img/Button-left.svg"
-                  alt="Icon: Arrow"
-                  class="history__button-img"
-                />
-              </button>
-              <button class="history__button history__button-right">
-                <img
-                  src="img/Button-right.svg"
-                  alt="Icon: Arrow"
-                  class="history__button-img"
-                />
-              </button>
+              <button class="history__button history__button-left"></button>
+              <button class="history__button history__button-right"></button>
             </div>
           </div>
 
@@ -461,7 +449,7 @@
     </section>
     <section class="newsletter">
       <div class="container">
-        <div class="newsletter__wrapper">
+        <div id="newsletter" class="newsletter__wrapper">
           <div class="newsletter__info">
             <h2 lang="en" class="newsletter__title">Подпишитесь</h2>
             <p class="newsletter__text">
@@ -494,7 +482,7 @@
     <!-- Newsletter -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__wrapper">
+        <div id="contacts" class="footer__wrapper">
           <div class="footer__info">
             <a href="#" class="footer__logo-link"
               ><img src="img/Logo.svg" alt="Icon: Logo" class="footer__logo"
@@ -543,19 +531,19 @@
             <ul class="footer__list">
               <li class="footer__item footer__item-title">Навигация</li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Новая коллекция</a>
+                <a href="#collection" class="footer__link">Новая коллекция</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Трендовая одежда</a>
+                <a href="#trends" class="footer__link">Трендовая одежда</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Истории Fashun</a>
+                <a href="#history" class="footer__link">Истории Fashun</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Отзывы клиентов</a>
+                <a href="#reviews" class="footer__link">Отзывы клиентов</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Вся одежда</a>
+                <a href="#hero" class="footer__link">Вся одежда</a>
               </li>
             </ul>
             <!-- Ul navigation -->

@@ -34,12 +34,23 @@
     overflow-y: auto
   &__buttons
   &__button
+    width: 56px
+    height: 56px
     border: none
     background-color: $light
     cursor: pointer
     padding: 0
     margin-right: 16px
     outline: none
+    &-left
+      background-image: url(../img/Button-left.svg)
+      background-repeat: no-repeat
+      background-size: contain
+    &-right
+      background-image: url(../img/Button-right.svg)
+      background-repeat: no-repeat
+      background-size: contain
+
   &__slider
     width: 660px
     min-height: 475px

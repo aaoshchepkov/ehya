@@ -88,8 +88,35 @@ $(document).mouseup(function(e) {
             $(".modal").removeClass("modal__visible");
             }
         });
-
+$(document).keydown(function (e) {
+    if (e.keyCode === 27) {
+      $(".modal").removeClass("modal__visible");
+      $(".navbar__menu").removeClass("navbar__menu-visible");
+    }
+  });
   
+
+
+$('.form').each(function() {
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    login: {
+      required: "Введите email",
+      email: "Введите ваш Email"
+    },
+    email: {
+      required: "Введите email",
+      email: "Введите ваш email в формате name@domain.com"
+    },
+    password: {
+      required: "Ведите пароль",
+      minlength: "Пароль должен быть не менее 6 знаков"
+  },
+  },
+});
+});  
+
 
 
 });
