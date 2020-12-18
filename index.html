@@ -16,30 +16,40 @@
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__wrap navbar__mobile-fixed">
       <div class="container">
         <div class="navbar__wrapper">
           <a href="#" class="logo"
             ><img src="img/Logo.svg" alt="Logo: Ehya" class="logo__img"
           /></a>
-          <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Главная</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Новинки</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Тренды</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Отзывы</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Контакты</a>
-            </li>
-          </ul>
-          <a href="#" class="navbar__button">Войти</a>
+          <div class="navbar__menu">
+            <button class="navbar__close">
+              <img
+                src="img/Close.svg"
+                alt="Icon: Close"
+                class="navbar__close-icon"
+              />
+            </button>
+
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Главная</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Новинки</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Тренды</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Отзывы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="navbar__button">Войти</a>
+          </div>
           <a href="#" class="navbar__wrapper-button">
             <span class="navbar__wrapper-line"></span>
             <span class="navbar__wrapper-line"></span>

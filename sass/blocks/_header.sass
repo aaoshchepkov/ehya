@@ -1,13 +1,31 @@
 .navbar
+  background-color: $light
+  &__wrap
+    margin-bottom: 36px
   &__wrapper
     display: flex
     justify-content: space-between
     align-items: center
     padding: 26px 0
-    margin-bottom: 36px
+    &-button
+      display: none
   &__menu
+    display: flex
+    align-items: center
+    background-color: $light
+  &__close
+    background-color: $light
+    border: none
+    cursor: pointer
+    outline: none
+    display: none
+    &-icon
+      width: 16px
+      height: 16px
+
+  &__list
     list-style: none
-    margin: 0 50px 0 auto
+    margin: 0 50px 0 0
     padding: 0
     display: flex
   &__item
@@ -20,7 +38,7 @@
     color: $dark
   &__button
     text-decoration: none
-    padding: 11px 22px 11px 22px
+    padding: 11px 22px
     font-weight: 700
     font-size: 16px
     line-height: 22px

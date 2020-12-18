@@ -6,8 +6,6 @@
   .hero
     &__wrapper
       max-width: 98%
-      &-button
-        display: none
 
 @media ( max-width:1200px)
   .container
@@ -39,10 +37,20 @@
 @media ( max-width:992px  )
   .container
     max-width: 672px
+  body
+    padding-top: 102px
   .navbar
+    &__wrap
+      margin-bottom: 20px
+    &__mobile
+      &-fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
     &__wrapper
       padding: 26px 12px
-      margin-bottom: 20px
       &-button
         display: flex
         flex-direction: column
@@ -57,9 +65,33 @@
         background-color: #3A4C66
         border-radius: 50px
     &__menu
+      padding: 36px 24px
       display: none
+      position: fixed
+      top: 10px
+      right: 8px
+      left: 8px
+      height: 322px
+      top: 10px
+      flex-direction: column
+      &-visible
+        display: flex
+        background-color: $light
+    &__close
+      display: block
+      position: absolute
+      top: 16px
+      right: 12px
+    &__list
+      display: flex
+      flex-direction: column
+      margin: 0
+    &__item
+      margin: 0 0 20px 0
     &__button
-      display: none
+      width: 256px
+      text-align: center
+
   .hero
     &__wrapper
       max-width: 95%
@@ -252,10 +284,11 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 87px
   .navbar
     &__wrapper
       padding: 18px 12px
-      margin-bottom: 20px
   .hero
     &__wrapper
       max-width: 100%
@@ -451,6 +484,13 @@
       margin-bottom: 40px
 
 @media (max-width: 410px)
+  .navbar
+    &__list
+      align-self: start
+    &__button
+      width: 100%
+      min-width: 256px
+      padding: 8px 22px
   .collection
     &__block
       &:first-child
@@ -468,7 +508,7 @@
       padding: 45px 20px 60px 20px
     &__logo
       margin-left: 10px
-      margin-bottom: 15px
+      margin-bottom: 12px
     &__info
       &-list
         margin-left: 12px

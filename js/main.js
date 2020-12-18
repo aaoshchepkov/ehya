@@ -43,4 +43,26 @@ $(document).ready(function () {
   },
 })
 
+var menuButton = $(".navbar__wrapper-button");
+menuButton.on("click", function () {
+event.preventDefault();  
+$(".navbar__menu").toggleClass("navbar__menu-visible");
+});
+
+var closeButton = $(".navbar__close");
+closeButton.on("click", function () {
+$(".navbar__menu").removeClass("navbar__menu-visible");
+});
+
+$(document).mouseup(function(e) {
+            var $target = $(e.target);
+            if ($target.closest(".navbar__menu").length === 0) {
+            $(".navbar__menu").removeClass("navbar__menu-visible");
+            }
+        });
+
+ 
+  
+
+
 });
