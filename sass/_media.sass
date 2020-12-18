@@ -30,6 +30,12 @@
   .newsletter
     &__wrapper
       padding-right: 0
+  .footer
+    &__wrapper
+      padding-right: 0
+    &__block
+      width: 700px
+
 @media ( max-width:992px  )
   .container
     max-width: 672px
@@ -175,6 +181,22 @@
       margin-bottom: 14px
     &__text
       margin-bottom: 55px
+  .footer
+    &__wrapper
+      padding: 65px 20px 60px 11px
+    &__logo
+      margin-bottom: 24px
+    &__info
+      max-width: 253px
+    &__block
+      flex-wrap: wrap
+      max-width: 358px
+    &__list
+      margin-bottom: 25px
+    &__item
+      margin-bottom: 24px
+      &-title
+        margin-bottom: 29px
 
 @media (max-width: 710px)
   .history
@@ -415,6 +437,19 @@
       width: 100%
       position: relative
       border-radius: 8px
+  .footer
+    &__wrapper
+      padding: 65px 20px 60px 20px
+      flex-direction: column-reverse
+      align-items: center
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__text
+      text-align: center
+    &__block
+      margin-bottom: 40px
 
 @media (max-width: 410px)
   .collection
@@ -429,6 +464,35 @@
         height: 170px
     &__img
       height: 170px
+  .footer
+    &__wrapper
+      padding: 45px 20px 60px 20px
+    &__logo
+      margin-left: 10px
+      margin-bottom: 15px
+    &__info
+      &-list
+        margin-left: 12px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      margin-bottom: 22px
+    &__block
+      width: 100%
+      align-self: start
+      margin-bottom: 35px
+    &__list
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &__item
+      margin-bottom: 15px
+      &-title
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 20px
 
 @media only screen and (max-height: 595px)
   .modal
