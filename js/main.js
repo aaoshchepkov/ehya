@@ -17,7 +17,8 @@ $(document).ready(function () {
     disableOnInteraction: false,
   },
   loop: true,
-  
+  effect:"coverflow",
+  speed:600,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -36,11 +37,16 @@ $(document).ready(function () {
   var historySwiper = new Swiper('.history__slider', {
   // Optional parameter
   loop: true,
+  speed:600,
   // Navigation arrows
   navigation: {
     nextEl: '.history__button-left',
     prevEl: '.history__button-right',
   },
+  keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
 })
 
 var menuButton = $(".navbar__wrapper-button");
@@ -62,6 +68,27 @@ $(document).mouseup(function(e) {
         });
 
  
+var modalButton = $(".navbar__button");
+modalButton.on("click", function () {
+event.preventDefault();   
+$(".modal").toggleClass("modal__visible");
+$(".navbar__menu").removeClass("navbar__menu-visible");
+
+});
+
+var closeModal = $(".modal__close");
+closeModal.on("click", function () {
+event.preventDefault();   
+$(".modal").removeClass("modal__visible");
+});
+
+$(document).mouseup(function(e) {
+            var $target = $(e.target);
+            if ($target.closest(".modal").length === 0) {
+            $(".modal").removeClass("modal__visible");
+            }
+        });
+
   
 
 

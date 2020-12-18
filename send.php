@@ -5,6 +5,8 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 
+$login = $_POST['login'];
+$password = $_POST['password'];
 $email = $_POST['email'];
 
 
@@ -12,6 +14,8 @@ $email = $_POST['email'];
 $title = "Новое обращение Ehya";
 $body = "
 <h2>Новое обращение</h2>
+<b>Логин:</b> $login<br><br>
+<b>Пароль:</b> $password<br><br>
 <b>Почта:</b> $email<br>
 ";
 

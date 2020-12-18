@@ -1,0 +1,79 @@
+.modal
+  &__dialog
+    position: fixed
+    top: 65px
+    left: 0
+    right: 0
+    padding: 100px 30px 40px 30px
+    background-color: $light
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 400px
+    height: 550px
+    margin: 0 auto
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+  &__visible
+    visibility: visible
+    opacity: 1
+    transition: opacity 0.4s
+  &__close
+    position: absolute
+    right: 30px
+    top: 30px
+  &__logo
+    width: 90px
+    height: 28px
+    margin: 0 auto
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 370px
+    margin: 0 auto
+    z-index: 150
+  &__input
+    padding: 16px 25px
+    border: 2px solid $blue
+    outline: none
+    border-radius: 8px
+    width: 100%
+    overflow: hidden
+  &__button
+    display: block
+    cursor: pointer
+    border: none
+    width: 100%
+    background-color: $light
+    text-decoration: none
+    padding: 11px 22px
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    border: 2px solid $blue
+    border-radius: 8px
+    color: $blue
+
+  &__recovery
+    display: block
+    text-decoration: none
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #1565D8
+    text-align: center
+  &__registration
+    display: block
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $text-color
+    text-align: center
