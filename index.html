@@ -30,7 +30,6 @@
                 class="navbar__close-icon"
               />
             </button>
-
             <ul class="navbar__list">
               <li class="navbar__item">
                 <a href="#" class="navbar__link">Главная</a>
@@ -472,18 +471,22 @@
             </p>
           </div>
           <!-- .newsletter__info -->
-          <form action="#" class="newsletter__form">
+          <form action="send.php" method="POST" class="newsletter__form">
             <input
               type="email"
               placeholder="Ваш Email"
               class="newsletter__input"
+              name="email"
+              required
             />
             <img
               src="img/email.svg"
               alt="Icon: Email"
               class="newsletter__form-icon"
             />
-            <button class="newsletter__button">Подписаться</button>
+            <button class="newsletter__button" type="submit">
+              Подписаться
+            </button>
           </form>
         </div>
       </div>
