@@ -1,7 +1,7 @@
 .trends
   padding: 0 5px
   &__wrapper
-    margin-bottom: 95px
+    margin-bottom: 98px
   &__nav
     display: flex
     align-items: center
@@ -48,6 +48,7 @@
     align-items: center
     width: 260px
     margin-bottom: 47px
+
     &:last-child
       flex-direction: column
       justify-content: center
@@ -64,7 +65,7 @@
     object-fit: cover
     object-position: top
     border-radius: 8px
-    margin-bottom: 20px
+    margin-bottom: 22px
   &__title
     flex-basis: 100%
     font-size: 24px
@@ -72,7 +73,12 @@
     letter-spacing: 0.2px
     margin: 0 0 3px 0
     padding-left: 10px
+    max-width: 100%
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     &-plus
+      padding: 0 10px
       font-size: 24px
       line-height: 32px
       color: $light

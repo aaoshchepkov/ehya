@@ -70,27 +70,31 @@ $(document).mouseup(function(e) {
  
 var modalButton = $(".navbar__button");
 modalButton.on("click", function () {
-event.preventDefault();   
-$(".modal").toggleClass("modal__visible");
+event.preventDefault();  
+$(".modal__overlay").addClass("modal__overlay-visible"); 
+$(".modal__dialog").addClass("modal__dialog-visible");
 $(".navbar__menu").removeClass("navbar__menu-visible");
 
 });
 
 var closeModal = $(".modal__close");
 closeModal.on("click", function () {
-event.preventDefault();   
-$(".modal").removeClass("modal__visible");
+event.preventDefault();  
+$(".modal__overlay").removeClass("modal__overlay-visible"); 
+$(".modal__dialog").removeClass("modal__dialog-visible");
+
 });
 
-$(document).mouseup(function(e) {
-            var $target = $(e.target);
-            if ($target.closest(".modal").length === 0) {
-            $(".modal").removeClass("modal__visible");
-            }
-        });
+$(".modal__overlay").on("mousedown", function(e) {
+		if ($(e.target).closest(".modal__dialog").length == 0) {
+    $(".modal__overlay").removeClass("modal__overlay-visible");
+    $(".modal__dialog").removeClass("modal__dialog-visible");					
+		}
+	});	
 $(document).keydown(function (e) {
     if (e.keyCode === 27) {
-      $(".modal").removeClass("modal__visible");
+      $(".modal__dialog").removeClass("modal__dialog-visible");
+$(".modal__overlay").removeClass("modal__overlay-visible");
       $(".navbar__menu").removeClass("navbar__menu-visible");
     }
   });
@@ -103,11 +107,11 @@ $('.form').each(function() {
   messages: {
     login: {
       required: "Введите email",
-      email: "Введите ваш Email"
+      email: "Введите в формате mail@mail.com "
     },
     email: {
       required: "Введите email",
-      email: "Введите ваш email в формате name@domain.com"
+      email: "Введите ваш email в формате mail@mail.com"
     },
     password: {
       required: "Ведите пароль",
