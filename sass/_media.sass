@@ -1,38 +1,48 @@
 @media(hover: hover) and (pointer: fine)
   a
-    transition: 0.2s
+    transition: 0.3s
+
     &:hover
       color: $blue
       transform: translateY(-2px)
   button
     &:hover
+      transition: 0.3s
       transform: translateY(-2px)
       color: $blue
   input
+    transition: 0.3s
     &:hover
       background-color: #d4e4f1
+
   .history
     &__button
+      transition: 0.3s
       &-left
         &:hover
           background-image: url(../img/Button-left-dark.svg)
       &-right
+        transition: 0.3s
         &:hover
           background-image: url(../img/Button-right-dark.svg)
     &__info
+      transition: 0.3s
       &-button
         &:hover
           color: $green
   .collection
+    transition: 0.3s
     &__button
       &:hover
         .collection__icon
           margin-left: 25px
   .trends__item
+    transition: 0.3s
     &:hover
       color: $blue
       transform: translateY(-2px)
   .button-rever,
+    transition: 0.3s
     text-decoration: none
     position: fixed
     right: 50px
@@ -46,6 +56,7 @@
     transform: rotate(90deg)
     &:hover
       transform: rotate(90deg)
+      background-image: url(../img/Button-left-dark.svg)
 
 @media ( max-width:1290px)
   .hero
@@ -117,12 +128,15 @@
       top: 10px
       right: 8px
       left: 8px
-      height: 322px
+      height: 328px
       top: 10px
       flex-direction: column
+      box-shadow: 0 0 10px 5000px rgba(0, 143, 223, 0.39)
+      border-radius: 8px
       &-visible
         display: flex
         background-color: $light
+
     &__close
       display: block
       position: absolute
@@ -261,6 +275,8 @@
       margin-bottom: 14px
     &__text
       margin-bottom: 55px
+    &__button
+      max-width: 100%
   .footer
     &__wrapper
       padding: 65px 20px 60px 11px
@@ -592,7 +608,9 @@
         font-size: 16px
         line-height: 22px
         margin-bottom: 20px
-
+  .modal
+    &__dialog
+      width: 98%
 @media only screen and (max-height: 620px)
   .modal
     &__dialog
