@@ -35,19 +35,22 @@ $(document).ready(function () {
   });
 
   var historySwiper = new Swiper('.history__slider', {
+  
   // Optional parameter
-  loop: true,
   speed:600,
   // Navigation arrows
   navigation: {
-    nextEl: '.history__button-left',
-    prevEl: '.history__button-right',
+    nextEl: '.history__button-right',
+    prevEl: '.history__button-left',
   },
   keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
-})
+  
+  
+});
+
 
 var menuButton = $(".navbar__wrapper-button");
 menuButton.on("click", function () {
