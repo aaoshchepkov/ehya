@@ -35,7 +35,7 @@ $(document).ready(function () {
   });
 
   var historySwiper = new Swiper('.history__slider', {
-  
+  loop: false,
   // Optional parameter
   speed:600,
   // Navigation arrows
